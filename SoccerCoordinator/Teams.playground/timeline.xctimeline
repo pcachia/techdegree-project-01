@@ -3,12 +3,17 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/philcachia/Desktop/Apple%20Projects/Project%2001%20-%20SoccerCoordinator/SoccerCoordinator/Teams.playground#CharacterRangeLen=238&amp;CharacterRangeLoc=1321&amp;EndingColumnNumber=0&amp;EndingLineNumber=39&amp;StartingColumnNumber=0&amp;StartingLineNumber=29&amp;Timestamp=575488832.9681309"
+         documentLocation = "file:///Users/philcachia/Desktop/Tech%20Degree/Swift/techdegree-project-01/SoccerCoordinator/Teams.playground#CharacterRangeLen=645&amp;CharacterRangeLoc=2739&amp;EndingColumnNumber=0&amp;EndingLineNumber=146&amp;StartingColumnNumber=0&amp;StartingLineNumber=121&amp;Timestamp=575954259.158286"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/philcachia/Desktop/Apple%20Projects/Project%2001%20-%20SoccerCoordinator/SoccerCoordinator/Teams.playground#CharacterRangeLen=238&amp;CharacterRangeLoc=1321&amp;EndingColumnNumber=0&amp;EndingLineNumber=39&amp;StartingColumnNumber=0&amp;StartingLineNumber=29&amp;Timestamp=575488832.968293"
+         documentLocation = "file:///Users/philcachia/Desktop/Tech%20Degree/Swift/techdegree-project-01/SoccerCoordinator/Teams.playground#CharacterRangeLen=645&amp;CharacterRangeLoc=2739&amp;EndingColumnNumber=0&amp;EndingLineNumber=146&amp;StartingColumnNumber=0&amp;StartingLineNumber=121&amp;Timestamp=575954259.158476"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/philcachia/Desktop/Tech%20Degree/Swift/techdegree-project-01/SoccerCoordinator/Teams.playground#CharacterRangeLen=0&amp;CharacterRangeLoc=4131&amp;EndingColumnNumber=0&amp;EndingLineNumber=171&amp;StartingColumnNumber=0&amp;StartingLineNumber=171&amp;Timestamp=575954259.158602"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
