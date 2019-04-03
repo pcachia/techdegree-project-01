@@ -1,6 +1,6 @@
 // Teamtreehouse Swift tech degree
 // - project 01 Soccer League Coordinator
-// - 2nd attempt 03/04/2019
+// - 3rd attempt for the "Exceeds Expectations" grade 04/04/2019
 // - By Phil Cachia
 
 // - Dictionary for players
@@ -115,7 +115,7 @@ let players: [[String:Any]] = [
     ]
 ]
 
-// - Arrays to store experienced and not experienced players by key (string)
+// - Arrays to store experienced and not experienced players by key
 var experiencedPlayers: [Int] = []
 var notExperiencedPlayers: [Int] = []
 
@@ -129,7 +129,7 @@ var countDragons = 0
 var countSharks = 0
 var countRaptors = 0
 
-// - varaibles for number of team player count
+// - varaibles for number of team players count
 var countExperiencedDragons = 0
 var countExperiencedSharks = 0
 var countExperiencedRaptors = 0
@@ -151,10 +151,7 @@ let teamDates: [String: (date: String, time: String)] = [
     "teamRaptors": ("March 18", "1:00 PM")
 ]
 
-// - variable to store the number of teams
-let numberOfTeams = 3;
-
-// - variable that will be used to loop various persons loops (will reset at the start of eacch loop)
+// - variable that will be used to loop various persons loops (will reset at the start of each loop)
 var countedPersons = 0
 
 // - array used for player selection
@@ -163,36 +160,38 @@ var playerSelection: [Int] = []
 // - variable used for checking if teams are equally balanced
 var teamAreEqualyBalanced = false
 
-// - array to store letters to guardians
+// - array to store letters for guardians
 var letters: [String] = []
 
-// - loop to sort players by experience
-countedPersons = 0
+// - for loop to sort players by experience
 for person in players {
+    // if current player has experience, append player to experiencedPlayers array
+    // else append player to notExperiencedPlayers array
     if person["experience"] as? Bool == true {
         experiencedPlayers.append(countedPersons)
     } else {
         notExperiencedPlayers.append(countedPersons)
     }
+    // add + 1 to countedPersons variable
     countedPersons += 1
 }
 
 // - checking how many players per team have to be assigned
-// if players count is divideable exactly by 3, assign each team the player count / 3
-// else if there is a remainder of 1, assign each team the player count / 3 + 1 to dragons
-// else (there is a remainder of 2), assign each team the player count / 3, + 1 to dragons and +1 to sharks
-if players.count % numberOfTeams == 0 {
-    countDragons = players.count / numberOfTeams
-    countSharks = players.count / numberOfTeams
-    countRaptors = players.count / numberOfTeams
-} else if players.count % numberOfTeams == 1 {
-    countDragons = (players.count / numberOfTeams) + 1
-    countSharks = players.count / numberOfTeams
-    countRaptors = players.count / numberOfTeams
+// if players count is divideable exactly by (number of teams), assign each team the (player count / number of teams)
+// else if there is a remainder of 1, assign each team the (player count / number of teams) and + 1 player to team dragons
+// else (there is a remainder of 2), assign each team the (player count / number of teams), + 1 player to team dragons and + 1 player to team sharks
+if players.count % teamDates.count == 0 {
+    countDragons = players.count / teamDates.count
+    countSharks = players.count / teamDates.count
+    countRaptors = players.count / teamDates.count
+} else if players.count % teamDates.count == 1 {
+    countDragons = (players.count / teamDates.count) + 1
+    countSharks = players.count / teamDates.count
+    countRaptors = players.count / teamDates.count
 } else {
-    countDragons = (players.count / numberOfTeams) + 1
-    countSharks = (players.count / numberOfTeams) + 1
-    countRaptors = players.count / numberOfTeams
+    countDragons = (players.count / teamDates.count) + 1
+    countSharks = (players.count / teamDates.count) + 1
+    countRaptors = players.count / teamDates.count
 }
 
 // - copy expieranced players into playerSelection
@@ -215,7 +214,7 @@ while playerSelection.count > 0 {
         } else {
             currentPlayer = person
             currentPlayerHeight = players[person]["height"] as! Int
-            // if this current player hieght is higher that the longest player height, set this player as the longest player
+            // if this current player height is higher than the longest player height, set this player as the longest player
             if currentPlayerHeight > longestPlayerHeight {
                 longestPlayer = currentPlayer
                 longestPlayerHeight = currentPlayerHeight
